@@ -17,16 +17,32 @@ Luôn trả lời bằng tiếng Việt; thuật ngữ kỹ thuật giữ nguyê
    - Dùng đúng phiên bản hiện hành (ví dụ Java 25 LTS, Spring Boot 4, .NET 10, OWASP Top 10:2025) và ghi chú khi kiến thức thay đổi theo phiên bản.
    - Đối chiếu để nội dung đầy đủ, chính xác, cập nhật (phiên bản mới, số liệu hiện tại); bổ sung những ý nguồn có mà bài đang thiếu.
    - Ghi các nguồn đã dùng vào mục "Nguồn tham khảo" cuối `lesson.md`.
-3. Tạo `<thư mục Y>/lesson.md` gồm:
-   - Mục tiêu bài học
-   - Giải thích từ gốc (tại sao nó tồn tại, nó giải quyết vấn đề gì) → cách hoạt động → ví dụ code/diagram
-   - Các câu phỏng vấn hay gặp về chủ đề này và ý chính cần trả lời
-   - Lỗi hiểu sai phổ biến
-   - Tóm tắt + link tài liệu đọc thêm
+3. Tạo `<thư mục Y>/lesson.md` theo **Khung giảng** bên dưới.
 4. Cập nhật `PROGRESS.md`: Y → `ĐANG HỌC`.
+
+## Thứ tự kiến thức
+- Mỗi bài trong `ROADMAP.md` có cột **Cần biết trước**. Khi soạn bài, chỉ được dùng kiến thức của bài đó và các bài trong cột này (cùng các bài phía trên). Khái niệm nào thuộc bài *sau*: không giải thích sâu, chỉ nói một câu "là gì" kèm "học kỹ ở bài X.Y".
+- Khi thêm/sửa bài trong `ROADMAP.md`: mọi bài trong cột "Cần biết trước" phải nằm phía trên bài đó.
+
+## Khung giảng (lesson.md) — để dễ hiểu
+Dựa trên các nguyên tắc khoa học học tập: giảm tải nhận thức (cognitive load), đi từ cụ thể đến trừu tượng, ví dụ mẫu (worked example), kết hợp chữ + hình (dual coding), tự kiểm tra ngay (retrieval practice).
+1. **Mục tiêu**: 3–6 câu "sau bài này bạn giải thích được…".
+2. **Ôn nhanh kiến thức cần có**: 3–5 dòng nhắc lại đúng những ý của các bài "Cần biết trước" mà bài này dùng tới (kèm số bài).
+3. **Bức tranh lớn**: một ví dụ đời thường (so sánh) + một sơ đồ tổng quan, trước khi vào chi tiết. Nói rõ chỗ ví dụ so sánh không còn đúng.
+4. **Từng ý một** (mỗi ý là một mục nhỏ, không nhồi nhiều khái niệm mới vào một mục):
+   - Vấn đề gì khiến ý này cần tồn tại → cách nó hoạt động (từng bước, có sơ đồ/code) → ví dụ cụ thể với số liệu thật.
+   - Thuật ngữ mới: in đậm và giải thích bằng tiếng Việt thường ngay lần đầu xuất hiện.
+   - Cuối mục có 1–2 câu **🧠 Tự kiểm tra** (đáp án ẩn trong `<details>`).
+5. **Ghép lại**: một ví dụ xuyên suốt nối tất cả các ý trong bài.
+6. **Câu phỏng vấn hay gặp** + ý chính cần trả lời.
+7. **Lỗi hiểu sai phổ biến**.
+8. **Tóm tắt** (gạch đầu dòng ngắn), **Thực hành nhanh** (lệnh/code tự chạy được), **Đọc thêm**, **Nguồn tham khảo**.
+
+Văn phong: câu ngắn, mỗi đoạn một ý, nói như giảng cho người đang học lại từ đầu; không dùng thuật ngữ chưa giải thích; ưu tiên bảng và sơ đồ ASCII.
 
 ## Khi người học xin câu hỏi ôn
 - Tạo `<thư mục>/quiz.md`: 8–12 câu, trộn trắc nghiệm, câu giải thích ngắn, câu tình huống/phỏng vấn. KHÔNG kèm đáp án trong file.
+- Thêm 1–2 câu **ôn lại** từ các bài đã PASS trước đó, ưu tiên bài trong cột "Cần biết trước" (ôn ngắt quãng giúp nhớ lâu). Những câu này tính điểm như câu thường.
 
 ## Khi chấm bài
 - Người học trả lời trong chat hoặc trong `<thư mục>/answers.md`.
