@@ -48,7 +48,7 @@ Mọi thứ phía sau (database qua mạng, auth qua HTTP, system design) đều
 | 1.1 | `01-how-internet-works` | Packet, IP, router, OSI/TCP-IP, TCP vs UDP, port | — |
 | 1.2 | `02-dns` | DNS resolve thế nào, record A/AAAA/CNAME/MX/NS/TXT, TTL, caching, anycast | 1.1 |
 | 1.3 | `03-http-basics` | Request/response, method, status code, header, keep-alive, HTTP caching (Cache-Control, ETag), cookie là gì, HTTP/1.1 vs 2 vs 3 | 1.1, 1.2 |
-| 1.4 | `04-cryptography-basics` | Hash, HMAC, mã hoá đối xứng vs bất đối xứng, chữ ký số, certificate & CA | — |
+| 1.4 | `04-cryptography-basics` | Mật mã **ứng dụng** cho dev (không học toán bên trong): hash vs encrypt vs encode (Base64), HMAC, mã hoá đối xứng vs bất đối xứng (dùng khi nào), chữ ký số, certificate & CA, "đừng tự viết crypto" | — |
 | 1.5 | `05-https-tls` | TLS 1.2 vs 1.3 handshake (1-RTT, 0-RTT), mTLS | 1.1, 1.3, 1.4 |
 | 1.6 | `06-rest-api` | REST, thiết kế endpoint, idempotency, pagination, versioning, OpenAPI; so sánh GraphQL, gRPC | 1.3 |
 

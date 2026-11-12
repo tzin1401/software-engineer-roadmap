@@ -41,12 +41,16 @@ Dựa trên các nguyên tắc khoa học học tập: giảm tải nhận thứ
 Văn phong: câu ngắn, mỗi đoạn một ý, nói như giảng cho người đang học lại từ đầu; không dùng thuật ngữ chưa giải thích; ưu tiên bảng và sơ đồ ASCII.
 
 ## Khi người học xin câu hỏi ôn
-- Tạo `<thư mục>/quiz.md`: 8–12 câu, trộn trắc nghiệm, câu giải thích ngắn, câu tình huống/phỏng vấn. KHÔNG kèm đáp án trong file.
+- Tạo `<thư mục>/quiz.md`: 8–12 câu, **chỉ trắc nghiệm** (mỗi câu 4 đáp án A–D, 1 đáp án đúng). KHÔNG kèm đáp án trong file.
+  - Mỗi đáp án là một câu **đầy đủ** (kết luận + lý do), các đáp án **dài ngang nhau và đủ ý như nhau** để không đoán được qua độ dài/chi tiết.
+  - Đáp án sai phải hợp lý, dựng từ các **lỗi hiểu sai phổ biến** của bài; tránh đáp án vô lý dễ loại.
+  - Vẫn phủ cả kiến thức nền lẫn câu tình huống/phỏng vấn (viết dưới dạng trắc nghiệm). Rải đáp án đúng đều ở A/B/C/D.
+  - Người học ghi `answers.md` dạng `1. C`.
 - Thêm 1–2 câu **ôn lại** từ các bài đã PASS trước đó, ưu tiên bài trong cột "Cần biết trước" (ôn ngắt quãng giúp nhớ lâu). Những câu này tính điểm như câu thường.
 
 ## Khi chấm bài
 - Người học trả lời trong chat hoặc trong `<thư mục>/answers.md`.
-- Chấm từng câu: Đúng / Đúng một phần / Sai, giải thích chỗ thiếu. Tính % hiểu bài.
+- Chấm từng câu: Đúng / Sai. Câu sai: giải thích vì sao đáp án đã chọn sai và vì sao đáp án đúng đúng. Tính % hiểu bài.
 - Ghi vào `<thư mục>/grading.md` (lần làm, điểm, nhận xét từng câu).
-- Nếu chưa đúng 100%: giải thích lại phần sai, ra câu hỏi làm lại cho đúng các ý đó (có thể diễn đạt khác), cập nhật quiz `quiz-retry-N.md`. Chưa cho học tiếp.
+- Nếu chưa đúng 100%: giải thích lại phần sai, ra câu hỏi làm lại cho đúng các ý đó (có thể diễn đạt khác), cập nhật quiz `quiz-retry-N.md` (cũng chỉ trắc nghiệm, theo cùng quy tắc). Chưa cho học tiếp.
 - Đúng 100%: cập nhật `PROGRESS.md` → `PASS`, ghi điểm lần đầu, số lần làm, ngày pass; gợi ý bài tiếp theo.
